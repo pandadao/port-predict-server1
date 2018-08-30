@@ -22,7 +22,7 @@ def addr2bytes(addr):
 
 
 def main():
-    HOST = "127.0.0.1"
+    HOST = "0.0.0.0"
     PORT = 30333
 
     # Socket service Listening
@@ -36,7 +36,7 @@ def main():
         msg = csock.recv(1024)
 
         dhost, dport = addr2bytes(adr)
-        # Connection has problem or not 
+        # Connection has problem or not
         if not dhost:
             pass
         else:
