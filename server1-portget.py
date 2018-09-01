@@ -28,7 +28,7 @@ def main():
     # Socket service Listening
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.bind((HOST, PORT))
-    s.listen(1)
+    s.listen(5)
 
     while True:
         (csock, adr) = s.accept()
